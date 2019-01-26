@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Focus-Start</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header clearfix">
+			<a href="index.html"><div class="logo"></div></a>
+			<nav class="nav">
+				<ul class="nav__menu">
+					<li class="nav__menu__item"><a class="nav__menu__item__link link_active" href="index.html">Главная</a></li>
+					<li class="nav__menu__item"><a class="nav__menu__item__link" href="category-application.html?0">Каталог приложений</a></li>
+					<li class="nav__menu__item"><a class="nav__menu__item__link" href="#">О компании</a></li>
+				</ul>
+			</nav>
+			<div class="header__basket">
+				<div class="header__basket-without-close">
+					<svg class ="header__basket__svg header__basket__svg-basket"><use xlink:href="#cft-basket"></use></svg>
+					<span class="header__basket__price"></span><span class="header__basket__dollar">$,</span><span class="header__basket__count"></span>
+				</div>
+				<svg class ="header__basket__svg header__basket__svg-close display-none"><use xlink:href="#cft-close"></use></svg>
+			</div>
+		</header>
+		<div class="content-wrapper">
+			<div class="content">
+				<div class="content__top">
+
+					<div class="content__top__header clearfix">
+						<h3 class="h-level h-level-3 content__top__header__h">Пакеты приложений</h3>
+						<input class="input input-search content__top__header__input" type="search"  placeholder="Поиск приложения">
+					</div>
+					<div class="slider-wrapper">
+						<svg class ="slider__arrow slider__arrow_left"><use xlink:href="#cft-arrow"></use></svg>
+						<div class="content__top__galery-overflow">
+							<ul class="content__top__galery-overflow__list">
+
+							</ul>
+						</div>
+						<svg class ="slider__arrow slider__arrow_right"><use xlink:href="#cft-arrow"></use></svg>
+					</div>
+
+				</div>
+
+				<div class="content__bottom clearfix">
+					<div class="content__bottom__block content__bottom__block_left">
+						<div class="wrapper__header clearfix">
+							<h5 class="h-level h-level-5 wrapper__header__h">Многопотоковые приложения</h5>
+						</div>
+						<div class="content__bottom__list">
+							<ul class="app__menu">
+								<li class=app__menu__item>
+									<a class="app__menu__item__name" href="#">Финансовый мониторинг</a>
+									<svg class ="app__menu__item__arrow"><use xlink:href="#cft-arrow-right"></use></svg>
+									<a class="app__menu__item__info">приложений: 5</a></li>
+								<li class=app__menu__item>
+									<a class="app__menu__item__name" href="#">Бухгалтерский учет</a>
+									<svg class ="app__menu__item__arrow"><use xlink:href="#cft-arrow-right"></use></svg>
+									<a class="app__menu__item__info">приложений: 2</a></li>
+								<li class=app__menu__item>
+									<a class="app__menu__item__name" href="#">О компании</a>
+									<svg class ="app__menu__item__arrow"><use xlink:href="#cft-arrow-right"></use></svg>
+									<a class="app__menu__item__info">приложений: 12</a></li>
+								<li class=app__menu__item>
+									<a class="app__menu__item__name" href="#">О компании</a>
+									<svg class ="app__menu__item__arrow"><use xlink:href="#cft-arrow-right"></use></svg>
+									<a class="app__menu__item__info">приложений: 29</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="content__bottom__block content__bottom__block_right">
+						<div class="wrapper__header clearfix">
+							<h5 class="h-level h-level-5 wrapper__header__h">Однопоточные приложения</h5>
+						</div>
+						<div class="content__bottom__list">
+							<ul class="app__menu">
+								<li class="app__menu__item">
+									<a class="app__menu__item__name" href="#">Расчетный центр</a>
+									<svg class ="app__menu__item__arrow"><use xlink:href="#cft-arrow-right"></use></svg>
+									<a class="app__menu__item__info">приложений: 69</a></li>
+								<li class="app__menu__item">
+									<a class="app__menu__item__name" href="#">Банковский гарантии</a>
+									<svg class ="app__menu__item__arrow"><use xlink:href="#cft-arrow-right"></use></svg>
+									<a class="app__menu__item__info">приложений: 44</a></li>
+								<li class="app__menu__item">
+									<a class="app__menu__item__name" href="#">Казначейство</a>
+									<svg class ="app__menu__item__arrow"><use xlink:href="#cft-arrow-right"></use></svg>
+									<a class="app__menu__item__info">приложений: 80</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<template id="basket-box">
+		<div class="basket">
+			<div class="basket__stages">
+				<div class="step step-1">
+					Список приложений
+				</div>
+				<div class="step step-2 disabled">
+					Оплата
+				</div>
+				<div class="step step-3 disabled">
+					Контактная информация
+				</div>
+				<div class="step step-4 disabled">
+					Подтверждение
+				</div>
+			</div>
+		</div>
+	</template>
+
+
+	<template id="basket-step0">
+
+		<div class="step1-application">
+			<div class="basket__table-wrapper">
+				<table class="basket__table">
+					<tr class="basket__table__tr">
+						<th class="basket__table__th">приложение</th>
+						<th class="basket__table__th">стоимость</th>
+						<th class="basket__table__th"></th>
+						<th class="basket__table__th">итог</th>
+						<th class="basket__table__th"></th>
+					</tr>
+				</table>
+			</div>
+
+			<div class="basket__to-order">
+				<span class="basket__to-order__dollars"></span>
+				<span class="basket__to-order__cents"></span>
+				<button class="button button_primary button-step1" type="button">ДАЛЕЕ</button>
+			</div>
+		</div>
+
+	</template>
+
+	<template id="table-row">
+		<tr class="basket__table__tr basket__table__tr-data">
+			<td class="basket__table__td basket__table__td_1">
+					<div class="basket__table__td__img">
+						<img class="basket__table__td__image" src="" alt="">
+					</div>
+					<div class="basket__table__td__label">
+						<h5 class="basket__table__td__h h-level-5"></h5>
+						<div class="box">
+							<input class="basket__table__checkbox" type="checkbox">
+							<label class="label basket__table__checkbox-label">установка и настройка</label>
+						</div>
+					</div>
+			</td>
+			<td class="basket__table__td basket__table__td_2">
+				<span class="table__price"></span>
+			</td>
+			<td class="basket__table__td basket__table__td_3">
+				<div class="toggle-app clearfix">
+					<div class="toggle-app__minus">-</div>
+					<div class="toggle-app__count">0</div>
+					<div class="toggle-app__plus">+</div>
+				</div>
+			</td>
+			<td class="basket__table__td basket__table__td_4">
+				<span class="table__sum-price"></span>
+			</td>
+			<td class="basket__table__td basket__table__td_5">
+				<svg class ="basket__table__td__rubish"><use xlink:href="#cft-rubish-bin"></use></svg>
+			</td>
+		</tr>
+	</template>
+
+	<template id="basket-step1">
+
+		<div class="step-2__cards">
+			<div class="step-2__cards-wrapper">
+				<div class="card card-after">
+					<div class="card-after__form-top">
+						<form action="#" class="form" name="cards">
+								<div class="">
+									<input class="input input-required input-number-card" type="text" name="number-card" placeholder="Номер карты" required pattern="[1-9]">
+								</div>
+
+								<div class="clearfix">
+									<input class="input input-year-month input-year-month_left" type="text" name="month" placeholder="Месяц" required pattern="">
+									<input class="input input-year-month input-year-month_right" type="text" name="year" placeholder="Год" required pattern="">
+								</div>
+						</form>
+					</div>
+
+					<div class="card-after__icons">
+						<div class="master-card"></div>
+						<div class="visa"></div>
+					</div>
+
+					<div class="card-after__form-bottom">
+						<form class="" action="index.html" method="post" name="cards">
+							<input class="input input-required" type="text" name="number-card-holder" placeholder="Фамилия Имя владельца карты" required pattern="[A-Za-z]">
+						</form>
+					</div>
+				</div>
+
+				<div class="card card-before clearfix">
+					<div class="card-before__line"></div>
+
+					<div class="card-before__cvv">
+							<input class="input input-required input-cvv" type="text" name="number-cvv" placeholder="CVV" required pattern="[0-9]{3}">
+							<p class="card-before__cvv__info">Три цифры на обратной стороне</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="step-2__button-group clearfix">
+				<button class="button button_secondary button-left step-2__buttons" type="button">НАЗАД</button>
+				<button class="button button_primary button-right step-2__buttons button-step2" type="submit">ОПЛАТИТЬ</button>
+			</div>
+			<script src="js/basket-draw-step2.js" type="module"></script>
+
+		</div>
+
+	</template>
+
+	<template id="basket-step2">
+
+		<div class="step-3__contact-info-wrapper clearfix">
+			<div class="step-3__contact-info">
+				<h5 class="step-3__contact-info__h">Контактная информация</h5>
+
+				<div class="step-3__form">
+					<form action="#" class="form" name="contact-info">
+						<div class="step-3__form_2x">
+							<input class="input input-2x" type="text" name="surname" placeholder="Фамилия">
+							<input class="input input-2x" type="text" name="name" placeholder="Имя Отчество">
+						</div>
+
+						<div class="step-3__form_2x">
+							<input class="input input-2x" type="telephone" name="telephone" placeholder="Номер телефона">
+							<input class="input input-2x" type="email" name="email" placeholder="E-mail">
+						</div>
+
+						<div class="step-3__form_3x">
+							<input class="input input-3x" type="text" name="organization" placeholder="Организация">
+							<input class="input input-3x" type="text" name="INN" placeholder="ИНН">
+							<input class="input input-3x" type="text" name="city" placeholder="Город">
+						</div>
+					</form>
+				</div>
+				<div class="step-3__toggles">
+					<form class="step-3__radio-buttons" action="#" method="post" name="contact-info">
+						<div class="box step-3__radio">
+							<input type="radio" name="install" id="quick-install">
+							<label class="label" for="quick-install">Быстрая установка</label>
+						</div>
+
+						<div class="box step-3__radio">
+							<input type="radio" name="install" id="def-install">
+							<label class="label" for="def-install">Отложенная установка</label>
+						</div>
+					</form>
+
+					<div class="toggle-wrapper">
+						<div class="toggle toggle__off"></div>
+						<span class="toggle-span">Требуется консультация</span>
+					</div>
+					<form class="" action="#" method="" name="contact-info">
+						<button class="button button_primary button-step3" type="button">Подтвердить</button>
+					</form>
+
+				</div>
+			</div>
+
+		</div>
+		<script src="js/basket-draw-step3.js" type="module"></script>
+
+	</template>
+
+	<template id="basket-step3">
+		<div class="step-4__success-wrapper">
+			<div class="step-4__success">
+
+				<div class="modal step-4__modal">
+					<div class="modal__oval"></div>
+					<p class="modal__info">Поздравляем! Ваш заказ успешно оформлен!</p>
+				</div>
+				<div class="step-4__information">
+					<p class="step-4__information__p">
+						В ближайшее время с Вами свяжется наш менеджер<br>
+						для уточнения параметров заказа<br>
+						и решения вопроса о встрече со специалистами.
+					</p>
+				</div>
+
+				<div class="">
+					<button class="button button_secondary button-step4" type="button" >На главную</button>
+				</div>
+
+			</div>
+			<script src="js/basket-draw-step4.js" type="module"></script>
+		</div>
+
+	</template>
+
+	<template id="pauseDownload">
+
+		<div class="pauseDownload-box">
+
+			<div class="tmp-block"></div>
+			<div class="pauseDownload-box__animation">
+				<div id="floatingCirclesG">
+					<div class="f_circleG" id="frotateG_01"></div>
+					<div class="f_circleG" id="frotateG_02"></div>
+					<div class="f_circleG" id="frotateG_03"></div>
+					<div class="f_circleG" id="frotateG_04"></div>
+					<div class="f_circleG" id="frotateG_05"></div>
+					<div class="f_circleG" id="frotateG_06"></div>
+					<div class="f_circleG" id="frotateG_07"></div>
+					<div class="f_circleG" id="frotateG_08"></div>
+				</div>
+			</div>
+
+		</div>
+
+	</template>
+
+	<div class="basket-wrapper display-none"></div>
+
+
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="cft-arrow-right" viewBox="0 0 32 32">
+			<g fill="none" fill-rule="evenodd"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+         <path d="M25.864 16L16.197 6zM7 16h16.25M25.864 16l-9.667 10"/>
+     </g>
+		</symbol>
+		<symbol id="cft-arrow" viewBox="0 0 32 32">
+			<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+				<path d="M11.136 16l9.667 10zM11.136 16l9.667-10"/>
+			</g>
+		</symbol>
+		<symbol id="cft-basket" viewBox="0 0 32 32">
+			<g fill="none" fill-rule="evenodd"  stroke-linecap="round">
+					<path stroke-width="2" d="M6.374 13.224h18.702c.275 0 .434.047.354.344l-2.85 10.686c-.08.292-.294.64-.482.64H9.352c-.187 0-.401-.436-.481-.734L6.02 13.67c-.08-.292.078-.446.353-.446zM13.78 7l-5.446 6.224M17.67 7l5.447 6.224"/>
+					<path d="M12 17.114v3.113M20 17.114v3.113M16 17.114v3.113"/>
+			</g>
+		</symbol>
+		<symbol id="cft-close" viewBox="0 0 32 32">
+			<defs>
+				<path id="a" d="M1.122.196l-.926.925a.663.663 0 0 0 0 .943l17.74 17.74c.261.262.682.26.942 0l.925-.925a.663.663 0 0 0 0-.943L2.066.196a.663.663 0 0 0-.943 0z"/>
+			</defs>
+			<g fill="none" fill-rule="evenodd">
+				<path stroke-linecap="round" stroke-width="2" d="M7.429 7.429L24.57 24.57M24.571 7.429L7.43 24.57"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<script src="js/application-download.js" type="module"></script>
+	<script src="js/basket.js" type="module"></script>
+	<script src="js/basket-functions.js" type="module"></script>
+	<script src="js/basket-draw-other.js" type="module"></script>
+	<script src="js/basket-draw.js" type="module"></script>
+	<script src="js/application-download.js" type="module"></script>
+	<script src="js/carousel.js" type="module"></script>
+	<script src="js/main-page.js" type="module"></script>
+
+
+
+
+</body>
+</html>
