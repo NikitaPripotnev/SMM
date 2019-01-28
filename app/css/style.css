@@ -9,6 +9,13 @@
   --color-labels: #858585;
   --color-light-grey: #adafb2;
   --color-grey: #79878e;
+  --color-header: rgba(212, 190, 224, 0.99);
+  --color-header-shadow: rgba(174, 143, 177, 0.8);
+  --color-header-info: rgba(231, 220, 237, 0.4);
+  --color-package-service: rgba(190, 223, 255, 0.4);
+  --color-pack: rgba(255, 255, 255, 0.5);
+  --color-services:rgba(136, 155, 211, 0.4);
+  --color-footer:rgba(36, 48, 76, 0.9);
   --opacity-disabled: 0.5;
   --font-size-h1: 64px;
   --font-size-h2: 48px;
@@ -31,9 +38,9 @@ h1 {
 .header {
   min-height: 12vh;
   align-items: center;
-  background-color: rgb(212, 190, 224, 0.99);
+  background-color: var(--color-header);
   display: flex;
-  box-shadow: 0 5px 2px -2px rgb(174, 143, 177, 0.8);
+  box-shadow: 0 5px 2px -2px var(--color-header-shadow);
 }
 
 .navbar a {
@@ -59,7 +66,7 @@ h1 {
 #header-info {
   margin-top: 12vh;
   background-attachment: relative;
-  background-color: rgb(231, 220, 237, 0.4);
+  background-color: var(--color-header-info);
   min-height: 88vh;
   text-align: right;
   display: flex;
@@ -92,7 +99,7 @@ h1 {
   padding: 10vh 10px;
   min-height: 88vh;
   align-items: center;
-  background-color: rgb(190, 223, 255, 0.4);
+  background-color: var(--color-package-service);
 }
 .package-service__h {
   margin-bottom: 10vh;
@@ -103,7 +110,7 @@ h1 {
   min-width: 250px;
   width: 300px;
   padding: 30px 20px;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: var(--color-pack);
   margin-bottom: 40px;
 }
 .package-service__pack:last-child {
@@ -149,13 +156,13 @@ h1 {
 .services {
   padding-top: 30px;
   min-height: 90vh;
-  background-color: rgb(136, 155, 211, 0.4);
+  background-color: var(--color-services);
 }
 .footer {
   min-height: 15vh;
   padding: 30px 40px;
   color: #fff;
-  background-color: rgb(36, 48, 76, 0.9);
+  background-color: var(--color-footer);
 }
 .footer__contacts {
   display: inline-block;
