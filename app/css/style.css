@@ -12,10 +12,10 @@
   --color-header: rgba(212, 190, 224, 0.99);
   --color-header-shadow: rgba(174, 143, 177, 0.8);
   --color-header-info: rgba(231, 220, 237, 0.4);
-  --color-package-service: rgba(190, 223, 255, 0.4);
+  --color-package-service: rgba(190, 223, 255, 0.6);
   --color-pack: rgba(255, 255, 255, 0.5);
-  --color-services:rgba(136, 155, 211, 0.4);
-  --color-footer:rgba(36, 48, 76, 0.9);
+  --color-services: rgba(136, 155, 211, 0.4);
+  --color-footer: rgba(36, 48, 76, 0.9);
   --opacity-disabled: 0.5;
   --font-size-h1: 64px;
   --font-size-h2: 48px;
@@ -65,6 +65,7 @@ h1 {
 }
 #header-info {
   margin-top: 12vh;
+  padding-top: 7vh;
   background-attachment: relative;
   background-color: var(--color-header-info);
   min-height: 88vh;
@@ -87,9 +88,6 @@ h1 {
 .header-info__img img {
   width: 100%;
 }
-.header-info__image {
-  width: 100%;
-}
 .header-info__button {
   margin-top: 20px;
 }
@@ -99,7 +97,12 @@ h1 {
   padding: 10vh 10px;
   min-height: 88vh;
   align-items: center;
-  background-color: var(--color-package-service);
+  background: linear-gradient(
+    to top,
+    var(--color-package-service),
+    var(--color-package-service)
+  );
+  background-repeat: no-repeat;
 }
 .package-service__h {
   margin-bottom: 10vh;
@@ -138,25 +141,27 @@ h1 {
   position: relative;
   background-color: rgb(190, 223, 255, 0.4);
 }
-.main__info {
+.reviews__info {
   font-size: 36px;
 }
-.main__methods {
+.reviews__methods {
   margin-bottom: 20px;
 }
-.main__methods__photo {
-  width: 280px;
-  height: 210px;
-  display: inline-block;
+.reviews__methods__photo {
   margin-right: 20px;
-}
-.main__methods__info {
   display: inline-block;
 }
-.services {
-  padding-top: 30px;
+.reviews__methods__info {
+  display: inline-block;
+}
+.gallery {
+  padding: 7vh 5vw;
   min-height: 90vh;
   background-color: var(--color-services);
+}
+.reviews {
+  padding: 7vh 0vw;
+  min-height: 90vh;
 }
 .footer {
   min-height: 15vh;
@@ -200,7 +205,10 @@ h1 {
 }
 .archor-main {
   position: absolute;
-  bottom: 12vh;
+  top: -12vh;
+}
+main {
+  position: relative;
 }
 svg {
   width: 32px;
@@ -260,7 +268,7 @@ svg {
     font-size: 56px;
   }
   .package-service__pack {
-    width: 300px;
+    width: 400px;
     font-size: 16px;
   }
   #header-info {
@@ -269,8 +277,9 @@ svg {
 }
 @media (min-width: 1100px) {
   .package-service__pack {
-    width: 330px;
-    font-size: 18px;
+    width: 470px;
+    font-size: 22px;
+    padding: 20px 40px;
   }
   .navbar a {
     font-size: 20px;
@@ -280,17 +289,13 @@ svg {
   h1 {
     font-size: 64px;
   }
-  .package-service__pack {
-    width: 400px;
-    font-size: 20px;
-  }
 }
 @media (min-width: 1600px) {
   h1 {
     font-size: 68px;
   }
   .package-service__pack {
-    width: 470px;
+    width: 4200px;
     font-size: 22px;
   }
 }
