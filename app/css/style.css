@@ -31,6 +31,7 @@ body {
   font-size: 16px;
   color: var(--color-footer);
   font-family: "EB Garamond", serif;
+  min-width: 300px;
 }
 h1 {
   font-size: 1.5rem;
@@ -39,7 +40,16 @@ h1 {
 h2 {
   font-weight: 600;
 }
-
+.button {
+  outline: none;
+  border-radius: 5px;
+  user-select: none;
+  border: none;
+  cursor: pointer;
+}
+input {
+  padding: 40px;
+}
 .header {
   min-height: 12vh;
   align-items: center;
@@ -63,7 +73,7 @@ h2 {
   width: 100%;
 }
 #logo {
-  width: 10vw;
+  width: 30%;
 }
 .navbar-inverse .navbar-brand {
   color: #999;
@@ -248,16 +258,20 @@ svg {
 .svg-whatsapp {
   margin-right: 0;
 }
-.svg-telegram:hover {
+.svg-telegram:hover,
+.modal__svg-telegram:hover {
   fill: rgb(56, 181, 228, 1);
 }
-.svg-whatsapp:hover {
+.svg-whatsapp:hover,
+.modal__svg-whatsapp:hover {
   fill: #4fce5d;
 }
-.svg-vk:hover {
+.svg-vk:hover,
+.modal__svg-vk:hover {
   fill: #597da3;
 }
-.svg-instagram:hover {
+.svg-instagram:hover,
+.modal__svg-instagram:hover {
   fill: url(#my-cool-gradient2);
 }
 
@@ -297,6 +311,9 @@ svg {
   }
   #header-info {
     text-align: left;
+  }
+  #logo {
+    width: 10%;
   }
 }
 @media (min-width: 1100px) {

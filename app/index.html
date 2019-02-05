@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+
   </head>
   <body>
     <header class="fixed-top header">
@@ -57,6 +59,8 @@
               <h1>РАЗВИТИЕ ВАШЕГО БРЕНДА</h1>
               <button
                 type="button"
+                data-toggle="modal" 
+                data-target="#exampleModalCenter"
                 class="btn btn-outline-dark header-info__button"
               >
                 Оставить заявку
@@ -65,6 +69,60 @@
           </div>
         </div>
       </div>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <p>Оставьте нам свои данные,
+                  и мы обязательно с вами свяжемся!
+               </p>
+               <form class="needs-validation" novalidate>
+                  <div class="form-row">
+                    <div class="col-12 col-md-6">
+                      <label for="validationTooltip01">Имя</label>
+                      <input type="text" class="form-control" id="validationTooltip01" placeholder="Введите ваше имя" required>
+                      <div class="valid-tooltip">
+                        Красивое имя!
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="validationTooltip02">Телефон</label>
+                      <input type="tel" class="form-control" id="validationTooltip02" placeholder="89139991010" required>
+                      <div class="valid-tooltip">
+                        Осталось ввести номер
+                      </div>
+                    </div>
+                  </div>
+                  <button id="buton-submit" class="button modal__button" type="submit">Оставить заявку</button>
+                </form>
+          </div>
+          <div class="modal-footer">
+              <p>Или свяжитесь с нами в социальных сетях:</p>
+
+              <a href="https://t.me/maya_shabash/" title="Telegram">
+                <svg class="modal__svg-telegram"><use xlink:href="#telegram"></use></svg>
+              </a>
+              <a href="https://www.instagram.com/maya_shabash/" title="Instagram">
+                <svg class="modal__svg-instagram"><use xlink:href="#instagram"></use></svg>
+              </a>
+              <a href="https://vk.me/maya_shabash" title="ВКонтакте">
+                <svg class="modal__svg-vk"><use xlink:href="#vk"></use></svg>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=79133889502"
+                title="WhatsApp"
+              >
+                <svg class="modal__svg-whatsapp"><use xlink:href="#WhatsApp"></use></svg>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
     <main>
       <a name="main" class="archor-main"></a>
