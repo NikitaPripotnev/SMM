@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+
 :root {
   --color-primary: #358ed7;
   --color-secondary: #34495e;
@@ -28,6 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   font-size: 16px;
+  font-family: "EB Garamond", serif;
 }
 h1 {
   font-size: 20px;
@@ -66,6 +69,7 @@ h1 {
 #header-info {
   margin-top: 12vh;
   padding-top: 7vh;
+  padding-bottom: 5vh;
   background-attachment: relative;
   background-color: var(--color-header-info);
   min-height: 88vh;
@@ -131,7 +135,7 @@ h1 {
 
 .package-service__row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .main {
   padding-top: 30px;
@@ -158,6 +162,15 @@ h1 {
   padding: 7vh 5vw;
   min-height: 90vh;
   background-color: var(--color-services);
+}
+.gallery__img {
+  width: 80%;
+  margin: 0 auto;
+}
+.gallery__block-img {
+  display: inline-block;
+  width: 300px;
+  margin: 30px 30px;
 }
 .reviews {
   padding: 7vh 0vw;
@@ -295,7 +308,16 @@ svg {
     font-size: 68px;
   }
   .package-service__pack {
-    width: 4200px;
+    width: 420px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 68px;
+  }
+  .package-service__pack {
+    width: 380px;
     font-size: 22px;
   }
 }
