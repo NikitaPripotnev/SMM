@@ -7,6 +7,9 @@
   background-color: rgb(212, 190, 224);
   border-bottom-color: rgb(174, 143, 177);
 }
+.modal-body{
+  border-bottom-color: rgb(174, 143, 177);
+}
 .modal__form {
   width: 100%;
   display: flex;
