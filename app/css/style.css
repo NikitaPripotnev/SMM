@@ -183,6 +183,7 @@ input {
   padding: 7vh 5vw;
   min-height: 90vh;
   background-color: var(--color-services);
+  text-align: center;
 }
 .gallery__img {
   width: 80%;
@@ -190,8 +191,8 @@ input {
 }
 .gallery__block-img {
   display: inline-block;
-  width: 300px;
-  margin: 30px 30px;
+  width: 400px;
+  margin: 30px 10px;
 }
 /*////DREAM-TEAM////*/
 
@@ -207,7 +208,7 @@ input {
   width: 100%;
   padding-left: 20%;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
 }
 .dream-team__main {
   display: inline-block;
@@ -349,6 +350,11 @@ svg {
   h1 {
     font-size: 44px;
   }
+  .gallery__block-img {
+    display: inline-block;
+    width: 300px;
+    margin: 30px 20px;
+  }
   .dream-team__left {
     display: inline-block;
     width: 20%;
@@ -388,6 +394,9 @@ svg {
   #logo {
     width: 10%;
   }
+  .gallery__block-img {
+    width: 230px;
+  }
   .dream-team__members-list {
     grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
@@ -408,6 +417,12 @@ svg {
   h1 {
     font-size: 64px;
   }
+  .gallery__block-img {
+    width: 350px;
+  }
+  .dream-team__left__logo {
+    font-size: 35px;
+  }
 }
 @media (min-width: 1600px) {
   h1 {
@@ -416,6 +431,12 @@ svg {
   .package-service__pack {
     width: 420px;
     font-size: 22px;
+  }
+  .gallery__block-img {
+    width: 430px;
+  }
+  .dream-team__left__logo {
+    font-size: 40px;
   }
 }
 @media (min-width: 2000px) {
@@ -428,6 +449,9 @@ svg {
   }
   .dream-team__member {
     height: 520px;
+  }
+  .gallery__block-img {
+    width: 500px;
   }
 }
 .package-service__info-after {
