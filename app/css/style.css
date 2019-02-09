@@ -11,7 +11,7 @@
   --color-labels: #858585;
   --color-light-grey: #adafb2;
   --color-grey: #79878e;
-  --color-header: rgba(212, 190, 224, 0.99);
+  --color-header: rgba(212, 190, 224, 0.9);
   --color-header-shadow: rgba(174, 143, 177, 0.8);
   --color-header-info: rgba(231, 220, 237, 0.4);
   --color-package-service: rgba(190, 223, 255, 0.6);
@@ -28,7 +28,7 @@
 }
 body {
   -webkit-overflow-scrolling: touch;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--color-footer);
   font-family: "EB Garamond", serif;
   min-width: 300px;
@@ -201,28 +201,41 @@ input {
 .dream-team__left {
   width: 20%;
   display: none;
-  height: 100vh;
+}
+.dream-team__left__logo {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 20%;
+  font-weight: bold;
+  font-size: 25px;
 }
 .dream-team__main {
   display: inline-block;
+  text-align: center;
   width: 100%;
   min-height: 100vh;
   height: 100%;
+  padding: 30px;
+  /*
   background: linear-gradient(
     to right,
     #fff,
     #aaaaff 27%,
     #aaaaff 27%,
     #aaaaff 57%
-  );
+  );*/
 }
+
 .dream-team__header {
+}
+li p {
+  font-size: 22px;
 }
 .dream-team__members {
   width: 100%;
 }
 .dream-team__member {
-  height: 420px;
+  height: 450px;
   margin: 10px;
 }
 .dream-team__member img {
@@ -232,7 +245,7 @@ input {
 }
 .dream-team__members-list {
   position: relative;
-  margin-top: 105px;
+  margin-top: 70px;
   padding: 0;
   list-style: none;
 }
@@ -274,7 +287,7 @@ input {
 }
 .footer__copyright__li,
 .footer__copyright__a {
-  font-size: 12px;
+  font-size: 14px;
   color: #939ab1;
 }
 .archor-main {
@@ -339,6 +352,7 @@ svg {
   .dream-team__left {
     display: inline-block;
     width: 20%;
+    height: 100%;
     margin-right: -4px;
   }
   .dream-team__main {
@@ -355,6 +369,9 @@ svg {
     grid-column-gap: 30px;
     grid-row-gap: 60px;
     -ms-grid-columns: 1fr 30px 1fr;
+  }
+  #logo {
+    width: 15%;
   }
 }
 @media (min-width: 970px) {
@@ -408,6 +425,9 @@ svg {
   .package-service__pack {
     width: 380px;
     font-size: 22px;
+  }
+  .dream-team__member {
+    height: 520px;
   }
 }
 .package-service__info-after {

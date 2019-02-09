@@ -1,0 +1,3 @@
+-Установить node.js  https://nodejs.org/en/
+-Перейти в корень проекта
+-Выполнить npm start
