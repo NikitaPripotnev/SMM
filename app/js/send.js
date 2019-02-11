@@ -1,5 +1,5 @@
 import sendData from './post.js';
-
+const url = 'http://localhost:10000/send-info/telegram';
 (function() {
   'use strict';
   window.addEventListener(
@@ -17,10 +17,26 @@ import sendData from './post.js';
               event.stopPropagation();
             } else {
               const body = {
-                name: name.value,
+                fullname: name.value,
                 phone: phone.value
               };
-              sendData('http://localhost:8080/api/telegram', body);
+              fetch(url, {
+                method: 'POST',
+                headers: {
+                  Accept: 'application/json',
+                  'Content-Type': 'application/json'
+                },
+                mode: 'cors',
+                body: JSON.stringify(body)
+              })
+                .then(function(response) {
+                  // конвертируем ответ в json
+                  return response.json();
+                })
+                .then(function(data) {
+                  // а вот и наши данные
+                  console.log(data);
+                });
             }
             form.classList.add('was-validated');
           },

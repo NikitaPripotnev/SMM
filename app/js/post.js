@@ -1,8 +1,8 @@
 const sendData = (url, data) => {
   let xhr = new XMLHttpRequest();
   const params =
-    'name=' +
-    encodeURIComponent(data.name) +
+    'fullname=' +
+    encodeURIComponent(data.fullname) +
     '&phone=' +
     encodeURIComponent(data.phone);
   xhr.open('POST', url, true);
