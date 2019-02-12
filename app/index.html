@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta itemprop="keywords" name="keywords" content="SMM, развитие, брэнд, продвижение, Instagram, сайт">
     <title>21 SMM Agency</title>
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon">    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
       rel="stylesheet"
@@ -15,10 +17,11 @@
     <link rel="stylesheet" href="css/modal.css" />
   </head>
   <body>
+    <a name="top" id="top" class="archor"></a>
     <header class="fixed-top header">
-      <div class="container">
+      <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a id="logo" class="navbar-brand" href="#">
+          <a id="logo" class="navbar-brand" href="#top">
             <img src="./assets/img/logo/logo21.png" alt="21 SMM Agency" />
           </a>
           <button
@@ -37,9 +40,12 @@
             id="navbarNavAltMarkup"
           >
             <ul class="nav navbar-nav">
-              <li><a class="nav-item nav-link active" href="#">Домой</a></li>
+              <li><a class="nav-item nav-link" href="#top">Главная</a></li>
               <li>
-                <a class="nav-item nav-link" href="#main">Основная часть</a>
+                <a class="nav-item nav-link" href="#main">Пакеты услуг</a>
+              </li>
+              <li>
+                <a class="nav-item nav-link" href="#gallery">Примеры работ</a>
               </li>
               <li><a class="nav-item nav-link" href="#footer">Контакты</a></li>
             </ul>
@@ -48,7 +54,7 @@
       </div>
     </header>
     <div id="header-info">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 header-info__img">
             <img src="assets/img/1920/smm-png-8.png" alt="" />
@@ -133,6 +139,7 @@
                 >
                   Оставить заявку
                 </button>
+                <p class="info-request">Спасибо! Ваша заявка принята, ожидайте звонка!</p>
               </form>
             </div>
             <div class="modal-footer">
@@ -168,7 +175,7 @@
       </div>
     </div>
     <main>
-      <a name="main" class="archor-main"></a>
+      <a name="main" id="main" class="archor"></a>
       <section class="package-service">
         <div class="container-fluid text-center">
           <h2 class="package-service__h">Пакеты услуг</h2>
@@ -248,6 +255,7 @@
       </section>
 
       <section class="gallery">
+        <a name="gallery" id="gallery" class="archor"></a>
         <div class="container-fluid gallery__container">
           <h2 class="package-service__h text-center">Примеры работ</h2>
           <template id="carousel">
@@ -288,6 +296,7 @@
       </section>
 
       <section class="dream-team">
+        <a name="dream-team" class="archor"></a>
         <div class="dream-team__left">
           <div class="dream-team__left__logo">
             <p>21</p>
@@ -334,7 +343,7 @@
     </main>
 
     <footer class="footer clearfix">
-      <a class="aкchor-footer" name="footer"></a>
+      <a class="archor" id="footer" name="footer"></a>
       <div class="container-fluid">
         <div class="footer__contacts">
           <h4 class="footer__contacts__h">Контакты</h4>
@@ -342,7 +351,6 @@
             г. Новосибирск, Россия
           </p>
           <p class="footer__contacts__p">Т: +7913148809</p>
-          <p class="footer__contacts__p">Ф: +7913148809</p>
         </div>
         <div class="footer__social">
           <a href="https://t.me/maya_shabash/" title="Telegram">
@@ -624,15 +632,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/animation-archor.js"></script>
+    <script src = "js/jquery.bcSwipe.js"></script>
     <script src="js/post.js" type="module"></script>
     <script src="js/send.js" type="module"></script>
+    <script src="js/application-download.js" type="module"></script>
+    <script src="js/device.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
     <script type="text/javascript">
       jQuery(function($) {
         $("#phone").mask("7(999)999-9999");
       });
     </script>
-    <script src="js/application-download.js" type="module"></script>
-    <script src="js/device.js" type="module"></script>
-    <script src="js/main.js" type="module"></script>
   </body>
 </html>

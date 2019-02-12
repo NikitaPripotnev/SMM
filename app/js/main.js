@@ -30,6 +30,7 @@ if (detectDevice()) {
       photos.appendChild(div);
     });
     galleryContainer.appendChild(carousel);
+    $('.carousel').bcSwipe({ threshold: 50 });
   });
 } else {
   downloadData('./API/gallery.json').then(function(gallery) {
