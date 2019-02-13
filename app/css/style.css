@@ -136,7 +136,7 @@ input {
   border-radius: 30px;
   min-width: 250px;
   width: 80%;
-  padding: 30px 40px;
+  padding: 15px 10px;
   background-color: var(--color-pack);
   margin-bottom: 40px;
   text-align: center;
@@ -350,8 +350,8 @@ svg {
     font-size: 36px;
   }
   .package-service__pack {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .navbar a {
     font-size: 18px;
@@ -428,6 +428,7 @@ svg {
     width: 470px;
     font-size: 22px;
     margin: 30px 30px;
+    padding: 20px 20px;
   }
   .package-service__pack__h {
     font-size: 28px;
