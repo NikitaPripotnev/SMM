@@ -1,0 +1,31 @@
+version: '3.4'
+services:
+  nginx:
+    image: nginx:latest
+    container_name: smm_nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+    command: [nginx-debug, '-g', 'daemon off;']
+
+    depends_on:
+      - front
+      - telegramproxy
+    links:
+      - front
+      - telegramproxy
+  front:
+    image: smm_front:latest
+    container_name: smm_front
+    build:
+      context: front
+    expose:
+      - "3000"
+  telegramproxy:
+    image: smm_telegramproxy:latest
+    container_name: smm_telegramproxy
+    build:
+      context: telegramproxy
+    expose:
+      - "10000"

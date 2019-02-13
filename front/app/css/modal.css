@@ -1,0 +1,36 @@
+.modal-content {
+  background-color: rgb(231, 220, 237);
+  font-size: 23px;
+  border-color: rgb(174, 143, 177);
+}
+.modal-header {
+  background-color: rgb(212, 190, 224);
+  border-bottom-color: rgb(174, 143, 177);
+}
+.modal-footer {
+  border-top-color: rgb(174, 143, 177);
+}
+.modal__form {
+  width: 100%;
+  display: flex;
+}
+.modal__button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid rgb(174, 143, 177);
+  outline: none;
+  font-weight: bold;
+  color: var(--color-footer);
+}
+.modal__button:hover {
+  border-color: rgb(174, 143, 177);
+  background-color: rgb(212, 190, 224);
+  color: #fff;
+}
+#button-submit {
+  outline: none;
+}
+[class*="modal__svg"] {
+  fill: var(--color-footer);
+}
