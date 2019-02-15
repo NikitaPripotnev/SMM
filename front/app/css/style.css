@@ -280,13 +280,17 @@ li p {
   margin-bottom: 20px;
 }
 .footer__copyright {
-  float: right;
+  display: inline-block;
 }
 .footer__copyright__logo {
   font-weight: bold;
 }
 .footer__copyright__list {
   padding-left: 0;
+  margin-bottom: 0;
+}
+.footer__copyright p {
+  margin-bottom: 5px;
 }
 .footer__copyright__li {
   display: inline-block;
@@ -363,6 +367,11 @@ svg {
 @media (min-width: 768px) {
   h1 {
     font-size: 44px;
+  }
+  .footer__copyright {
+    float: right;
+    text-align: right;
+    display: block;
   }
   .navbar a {
     font-size: 22px;
