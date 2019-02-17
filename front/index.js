@@ -1,6 +1,8 @@
-const browserSync = require('browser-sync');
+var express = require('express');
 
-browserSync({
-  server: 'app',
-  files: ['app/*.html', 'app/css/*.css', 'app/js/*.js']
+var app = express();
+app.use(express.static(__dirname + '/app'));
+app.get('/', function(req, res) {
+  res.sendfile('app/index.html');
 });
+app.listen(3000);

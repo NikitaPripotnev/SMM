@@ -1,4 +1,3 @@
-import sendData from './post.js';
 (function() {
   'use strict';
   window.addEventListener(
