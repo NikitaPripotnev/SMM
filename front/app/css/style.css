@@ -49,6 +49,7 @@ h2 {
 }
 input {
   padding: 40px;
+  outline: none;
 }
 .header {
   min-height: 12vh;
@@ -99,6 +100,7 @@ input {
   border-bottom: 1px solid #ccc;
   text-align: center;
 }
+.disabled
 .header-info__right {
   display: flex;
   align-items: center;
