@@ -30,4 +30,4 @@ services:
     expose:
       - "10000"
     environment:
-      - "RECEIVER_CHATID=475233118"
+      - "RECEIVER_CHATID=56188784"
