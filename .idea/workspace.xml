@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ccb9694-ca1c-4ec8-8092-f045dda43652" name="Default Changelist" comment="" />
+    <list default="true" id="8ccb9694-ca1c-4ec8-8092-f045dda43652" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/front/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/app/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/app/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/app/css/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/app/css/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/app/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/app/js/animation-archor.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/app/js/animation-archor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/app/js/post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/app/js/send.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/app/js/send.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-744626883">
@@ -31,10 +48,42 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/app/css/modal.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>navbar-dark</find>
+      <find>991</find>
+      <find>input</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/front/app/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/front/app/js/animation-archor.js" />
+        <option value="$PROJECT_DIR$/front/app/css/style.css" />
+        <option value="$PROJECT_DIR$/front/app/index.html" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="24" />
@@ -46,8 +95,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -55,11 +103,36 @@
               <item name="SMM" type="b2602c69:ProjectViewProjectNode" />
               <item name="SMM" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SMM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SMM" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SMM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SMM" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SMM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SMM" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SMM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SMM" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -92,9 +165,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25778133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -111,6 +184,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -121,61 +195,60 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BotOptionsConfiguration.class">
+    <entry file="file://$PROJECT_DIR$/BotOptionsConfiguration.class" />
+    <entry file="file://$PROJECT_DIR$/SendMessageRequest.class" />
+    <entry file="file://$PROJECT_DIR$/TelegramProxy.class" />
+    <entry file="file://$PROJECT_DIR$/TelegramProxyController.class" />
+    <entry file="file://$PROJECT_DIR$/TelegramBotService.class" />
+    <entry file="file://$PROJECT_DIR$/front/app/css/modal.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="22" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#1153#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-200" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/js/send.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SendMessageRequest.class">
+    <entry file="file://$PROJECT_DIR$/front/app/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <folding>
-            <element signature="e#0#826#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="175">
+          <caret line="1772" column="22" selection-start-line="1772" selection-start-column="19" selection-end-line="1772" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TelegramProxy.class">
+    <entry file="file://$PROJECT_DIR$/front/app/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#541#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="205">
+          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TelegramProxyController.class">
+    <entry file="file://$PROJECT_DIR$/front/app/js/animation-archor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#1254#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TelegramBotService.class">
+    <entry file="file://$PROJECT_DIR$/front/app/js/jquery.maskedinput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#2211#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2127" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/js/jquery.bcSwipe.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>

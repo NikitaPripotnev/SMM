@@ -49,6 +49,7 @@ h2 {
 }
 input {
   padding: 40px;
+  outline: none;
 }
 .header {
   min-height: 12vh;
@@ -99,6 +100,7 @@ input {
   border-bottom: 1px solid #ccc;
   text-align: center;
 }
+.disabled
 .header-info__right {
   display: flex;
   align-items: center;
@@ -280,13 +282,17 @@ li p {
   margin-bottom: 20px;
 }
 .footer__copyright {
-  float: right;
+  display: inline-block;
 }
 .footer__copyright__logo {
   font-weight: bold;
 }
 .footer__copyright__list {
   padding-left: 0;
+  margin-bottom: 0;
+}
+.footer__copyright p {
+  margin-bottom: 5px;
 }
 .footer__copyright__li {
   display: inline-block;
@@ -342,12 +348,12 @@ svg {
 
 @media (min-width: 325px) {
   h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 @media (min-width: 576px) {
   h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
   .package-service__pack {
     margin-left: 15px;
@@ -362,10 +368,15 @@ svg {
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: 44px;
+    font-size: 36px;
+  }
+  .footer__copyright {
+    float: right;
+    text-align: right;
+    display: block;
   }
   .navbar a {
-    font-size: 22px;
+    font-size: 18px;
     margin-left: 10px;
   }
   .gallery__block-img {
@@ -400,7 +411,7 @@ svg {
 }
 @media (min-width: 970px) {
   h1 {
-    font-size: 56px;
+    font-size: 42px;
   }
   .package-service__pack {
     width: 400px;
@@ -419,7 +430,7 @@ svg {
     grid-row-gap: 70px;
   }
   .navbar a {
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 15px;
   }
 }
@@ -433,16 +444,19 @@ svg {
   .package-service__pack__h {
     font-size: 28px;
   }
+  .gallery__block-img {
+    width: 260px;
+  }
   #logo {
     width: 10%;
   }
 }
 @media (min-width: 1300px) {
   h1 {
-    font-size: 64px;
+    font-size: 50px;
   }
   .gallery__block-img {
-    width: 350px;
+    width: 320px;
   }
   .dream-team__left__logo {
     font-size: 32px;
@@ -452,7 +466,7 @@ svg {
     font-size: 24px;
   }
   .navbar a {
-    font-size: 21px;
+    font-size: 24px;
     margin-left: 16px;
   }
   .package-service__info-after {
@@ -467,7 +481,7 @@ svg {
 }
 @media (min-width: 1600px) {
   h1 {
-    font-size: 68px;
+    font-size: 56px;
   }
   .package-service__pack {
     width: 350px;
@@ -475,7 +489,7 @@ svg {
     margin: 30px 20px;
   }
   .gallery__block-img {
-    width: 430px;
+    width: 380px;
   }
   .dream-team__left__logo {
     font-size: 40px;
@@ -492,7 +506,7 @@ svg {
 }
 @media (min-width: 1900px) {
   h1 {
-    font-size: 68px;
+    font-size: 60px;
   }
   .package-service__pack {
     width: 420px;
@@ -502,10 +516,10 @@ svg {
     height: 730px;
   }
   .gallery__block-img {
-    width: 500px;
+    width: 440px;
   }
   .navbar a {
-    font-size: 30px;
+    font-size: 28px;
     margin-left: 20px;
   }
   .package-service__info-after {

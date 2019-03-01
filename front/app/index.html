@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134687784-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134687784-1');
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta itemprop="keywords" name="keywords" content="SMM, развитие, брэнд, продвижение, Instagram, сайт">
@@ -26,6 +35,7 @@
           </a>
           <button
             class="navbar-toggler"
+            id="toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNavAltMarkup"
@@ -47,6 +57,9 @@
               <li>
                 <a class="nav-item nav-link" href="#gallery">Примеры работ</a>
               </li>
+              <li>
+                <a class="nav-item nav-link" href="#dream-team">Наша команда</a>
+              </li>
               <li><a class="nav-item nav-link" href="#footer">Контакты</a></li>
             </ul>
           </div>
@@ -61,7 +74,11 @@
           </div>
           <div class="col-lg-4 offset-lg-2 header-info__right">
             <div class="header-info__titles">
-              <h1>РАЗВИТИЕ ВАШЕГО БРЕНДА</h1>
+              <h1>РАЗВИТИЕ ВАШЕГО БРЕНДА В INSTAGRAM</h1>
+              <p>Наша команда создает продающий контент,
+                 продвигает бренд и увеличивает вашу прибыль в Instagram!
+                 Разрабатываем и продвигаем сайты.
+                Ознакомьтесь с нашими услугами и оставьте заявку</p>
               <button
                 type="button"
                 data-toggle="modal"
@@ -121,8 +138,9 @@
                       class="form-control"
                       id="phone"
                       placeholder="Введите ваш телефон"
-                      pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{4}"
+                      pattern="+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
                       required
+                      autocomplete="off"
                     />
                     <div class="valid-feedback">
                       Номер указан верно!
@@ -133,10 +151,19 @@
                   </div>
                 </div>
                 <button
-                  id="buton-submit"
+                  id="button-submit"
                   class="button modal__button"
                   type="submit"
                 >
+                  <div id="button-modal">
+                    <div class="cssload-loader">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
                   Оставить заявку
                 </button>
                 <p class="info-request">Спасибо! Ваша заявка принята, ожидайте звонка!</p>
@@ -196,7 +223,7 @@
             </div>
             <div class="package-service__pack text-center">
               <svg><use xlink:href="#market"></use></svg>
-              <h4 class="package-service__pack__h">Продвижение сайта</h4>
+              <h4 class="package-service__pack__h">Разработка и продвижение сайта</h4>
               <div class="text-left">
                 <ul сlass="package-service__pack__ul">
                   <li>Составление дизайна</li>
@@ -215,6 +242,7 @@
                   <li>Составление стратегии продвижения</li>
                   <li>Оформление профиля</li>
                   <li>Составление визуала</li>
+                  <li>Обработка фото</li>
                   <li>Написание продающих постов</li>
                   <li>Вовлечение аудитории через stories</li>
                   <li>Создание логотипов</li>
@@ -296,7 +324,7 @@
       </section>
 
       <section class="dream-team">
-        <a name="dream-team" class="archor"></a>
+        <a name="dream-team" id="dream-team" class="archor"></a>
         <div class="dream-team__left">
           <div class="dream-team__left__logo">
             <p>21</p>
@@ -334,7 +362,7 @@
                   />
                 </figure>
                 <h4>Любовь Ксенева</h4>
-                <p>Модель</p>
+                <p>Контент менеджер</p>
               </li>
             </ul>
           </div>
@@ -350,26 +378,37 @@
           <p class="footer__contacts__p">
             г. Новосибирск, Россия
           </p>
-          <p class="footer__contacts__p">Т: +7913148809</p>
+          <p class="footer__contacts__p">Т: +7913389502</p>
         </div>
-        <div class="footer__social">
-          <a href="https://t.me/maya_shabash/" title="Telegram">
-            <svg class="svg-telegram"><use xlink:href="#telegram"></use></svg>
-          </a>
-          <a href="https://www.instagram.com/maya_shabash/" title="Instagram">
-            <svg class="svg-instagram"><use xlink:href="#instagram"></use></svg>
-          </a>
-          <a href="https://vk.me/maya_shabash" title="ВКонтакте">
-            <svg class="svg-vk"><use xlink:href="#vk"></use></svg>
-          </a>
-          <a
-            href="https://api.whatsapp.com/send?phone=79133889502"
-            title="WhatsApp"
-          >
-            <svg class="svg-whatsapp"><use xlink:href="#WhatsApp"></use></svg>
-          </a>
-        </div>
+       
         <div class="footer__copyright clearfix">
+          <p>Свяжитесь с нами в социальных сетях</p>
+          <p>или оставьте заявку!</p> 
+          <div class="footer__social">
+            <a href="https://t.me/maya_shabash/" title="Telegram">
+              <svg class="svg-telegram"><use xlink:href="#telegram"></use></svg>
+            </a>
+            <a href="https://www.instagram.com/maya_shabash/" title="Instagram">
+              <svg class="svg-instagram"><use xlink:href="#instagram"></use></svg>
+            </a>
+            <a href="https://vk.me/maya_shabash" title="ВКонтакте">
+              <svg class="svg-vk"><use xlink:href="#vk"></use></svg>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=79133889502"
+              title="WhatsApp"
+            >
+              <svg class="svg-whatsapp"><use xlink:href="#WhatsApp"></use></svg>
+            </a>
+          </div>
+          <button
+          type="button"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+          class="btn btn-outline-light "
+        >
+          Оставить заявку
+        </button>
           <ul class="footer__copyright__list">
             <li class="footer__copyright__logo footer__copyright__li">
               21 SMM agency
@@ -634,14 +673,13 @@
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/animation-archor.js"></script>
     <script src = "js/jquery.bcSwipe.js"></script>
-    <script src="js/post.js" type="module"></script>
     <script src="js/send.js" type="module"></script>
     <script src="js/application-download.js" type="module"></script>
     <script src="js/device.js" type="module"></script>
     <script src="js/main.js" type="module"></script>
     <script type="text/javascript">
       jQuery(function($) {
-        $("#phone").mask("7(999)999-9999");
+        $("#phone").mask("+7(999)999-99-99");
       });
     </script>
   </body>

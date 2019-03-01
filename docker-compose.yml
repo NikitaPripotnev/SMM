@@ -29,3 +29,5 @@ services:
       context: telegramproxy
     expose:
       - "10000"
+    environment:
+      - "RECEIVER_CHATID=56188784"
